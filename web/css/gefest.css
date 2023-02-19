@@ -1,0 +1,108 @@
+body{
+	/* background: #C6D1D6; */
+	/* background-color: #f8f8f8; */
+	background-image: url(../img/bgcnc.webp);
+	
+}
+
+div{
+	border: 1px solid black;
+	/* margin: 2px; */
+}
+
+.all{
+	width: 100%;	
+	height: 100%;
+	position: relative;
+	/* background: white; */
+
+}
+
+.header{
+	position: relative;
+	height: 280px;
+	width: 100%;
+	/* background-color: #689AD3;  */
+}
+
+.title-header{
+	background-color: #f4b628;
+	height: 35px;
+	width:100%;	
+}
+
+.menu-styles{
+	width:99%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.menu{
+	height: 45px;
+	/* width: 100%; */
+	background: #0D56A6;
+}
+
+ul { 
+	list-style: none; 
+}
+
+.menu>ul{
+	display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.menu>ul>li{
+	position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>ul>li>a{	
+	color: white;
+}
+
+nav.navbar .dropdown:hover > .dropdown-menu {
+	display: block; 
+   }
+
+.bg-dark {
+	background-color: #0D56A6;
+}
+
+.main{	
+	display: flex;
+}
+
+.main-menu{
+	/* background: green; */
+	width: 270px;
+	min-width: 260px;
+	display: block;
+}
+
+.main-body{
+	/* background: violet; */
+	width: 100%;
+	display: block;
+	padding: 0px;
+}
+
+.main-menu-item{
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 240px; 
+	width: 240px; 
+	background-color: aqua; 
+	border: 2px solid black;
+}
+
+.footer{	
+	background-color: #033E6B;
+	height: 50px;
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+}
