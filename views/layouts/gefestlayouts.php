@@ -10,6 +10,8 @@ use yii\bootstrap4\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use yii\helpers\Url;
+use yii\widgets\Menu;
+use app\components\HMWidgett;
 
 AppAsset::register($this);
 ?>
@@ -34,14 +36,14 @@ AppAsset::register($this);
 			<div class="title-header">
 				telephone : +6 (315) 9379992 / +6 (871) 4556312
 			</div>
-
-
-
-
-			
+			<?php 
+				echo '22';
+				HMWidgett::widget([]);
+				echo '33';
+				?>
 		
 			<div class="menu-styles">
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
   <a class="navbar-brand" href="#">Logo</a>
 
@@ -53,7 +55,7 @@ AppAsset::register($this);
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 	  Товары и услуги
       </a>
-      <div class="dropdown-menu">
+      <div class="dropdown-menu">		
         <a class="dropdown-item" href="#">Link 1</a>
         <a class="dropdown-item" href="#">Link 2</a>
         <a class="dropdown-item" href="#">Link 3</a>
@@ -75,7 +77,9 @@ AppAsset::register($this);
 
   </ul>
 </nav> 
-				<div class="menu">
+				<div class="menu">	
+					
+				
 					<!-- <ul>
 						<li><a href="/index.html">Главная</a></li> 
 						<li><a href="/index.html">Товары и услуги</a></li> 
@@ -85,41 +89,13 @@ AppAsset::register($this);
 						<li><a href="/index.html">Возврат и обмен</a></li> 					
 					</ul> -->
 				</div>
-				<!-- <div class="category-list">
-								<ul>
-									<li>
-										<ul>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-										</ul>
-									</li>
-									<li>
-										<ul>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-											<li><a href="/index.html">Главная</a></li>
-										</ul>
-									</li>
-														
-								</ul>
-				</div> -->
+
 			</div>
 		</div>
+
+
+
+		<!-- MAIN -->
 		<div class="main">
 			<div class="main-menu">
 				MENU

@@ -18,7 +18,7 @@ use yii\data\ActiveDataProvider;
 $dataProvider = new ActiveDataProvider([
 	'query' => Categorylist::find()->where(['pearent_id'=>0]),
 	'pagination' => [
-		'pageSize' => 20,
+		'pageSize' => 3,
 	],
 ]);
  
@@ -34,13 +34,16 @@ echo ListView::widget([
                 	<?php foreach ($category as $key=>$item): 
 											
 						if (($key%4)==0) echo '</ul><ul style="display: flex;">';						
-						?>
+					?>
 						
                     
 					<li>
 						<div class="main-menu-item">
-							<h2><?php echo $item->ru_name ?></h2> 
-							<!-- // Имы ячейки в таблице должно быть соответственно blog_title -->                   
+							<h4>РУ название : <?php echo $item->ru_name ?></h4> 
+							<h4>EN name<?php echo $item->en_name ?></h4> 
+							<h4>УКР назва<?php echo $item->ukr_name ?></h4> 
+							<h4>IDшник<?php echo $item->id ?></h4> 
+							<h4>P Id<?php echo $item->pearent_id ?></h4> 							
 						</div>
 					</li> 
 				<?php endforeach ?>				
