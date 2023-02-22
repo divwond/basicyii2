@@ -9,7 +9,8 @@ class HMWidgett extends Widget
 
     public function run()
     {
-        return $this->render('headermenu');
+        echo 'hello';
+        // return $this->render('headermenu');
     }
 }
 

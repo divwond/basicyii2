@@ -9,10 +9,9 @@ namespace app\models;
 
 use yii\db\ActiveRecord;
 
-class Country extends ActiveRecord
-{
+class Country extends ActiveRecord{
 }
-use app\models\Country;
+//use app\models\Country;
 
 // получаем все строки из таблицы "country" и сортируем их по "name"
 $countries = Country::find()->orderBy('name')->all();

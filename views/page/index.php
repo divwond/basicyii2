@@ -10,10 +10,11 @@ echo 'INDEX-PAGE';
 
 <?php
 
-     
-use app\models\News;
 use yii\widgets\ListView;
 use yii\data\ActiveDataProvider;
+
+
+
  
 $dataProvider = new ActiveDataProvider([
 	'query' => Categorylist::find()->where(['pearent_id'=>0]),

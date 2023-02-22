@@ -67,6 +67,13 @@ ul {
 nav.navbar .dropdown:hover > .dropdown-menu {
 	display: block; 
    }
+   
+.navmenu>.dropdown:hover>.dropdown-menu{
+	display: block;
+}
+.navmenu .menu{
+	font-size: 14px;
+}
 
 .bg-dark {
 	background-color: #0D56A6;
