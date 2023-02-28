@@ -3,6 +3,8 @@
 
 use app\models\Categorylist;
 use yii\helpers\Html;
+use app\components\LICWidget;
+
 
 echo 'INDEX-PAGE';
 
@@ -10,43 +12,69 @@ echo 'INDEX-PAGE';
 
 <?php
 
-use yii\widgets\ListView;
-use yii\data\ActiveDataProvider;
+// use yii\widgets\ListView;
+// use yii\data\ActiveDataProvider;
 
 
 
  
-$dataProvider = new ActiveDataProvider([
-	'query' => Categorylist::find()->where(['pearent_id'=>0]),
-	'pagination' => [
-		'pageSize' => 3,
-	],
-]);
+// $dataProvider = new ActiveDataProvider([
+// 	'query' => Categorylist::find()->where(['pearent_id'=>0]),
+// 	'pagination' => [
+// 		'pageSize' => 3,
+// 	],
+// ]);
  
-echo ListView::widget([
-	'dataProvider' => $dataProvider,
-	'itemView' => '_list',
-]);
+// echo ListView::widget([
+// 	'dataProvider' => $dataProvider,
+// 	'itemView' => '_list',
+// ]);
 
 ?>
 
 <div class="main-body">   
+				<?php
+				echo LICWidget::widget();
+				?>
+
+
+<?php
+$arr =['опис', 'описание', 'descr'];
+$jsvar = json_encode($arr);
+var_dump ( $jsvar);
+echo '</br>';
+var_dump (json_decode($jsvar));
+echo ' konec';
+
+?>
+
+
+
 				<ul style="display: flex;">
-                	<?php foreach ($category as $key=>$item): 
+                	<?php foreach ($catalog as $key=>$item): 
 											
 						if (($key%4)==0) echo '</ul><ul style="display: flex;">';						
 					?>
 						
                     
-					<li>
+					<!-- <li>
 						<div class="main-menu-item">
-							<h4>РУ название : <?php echo $item->ru_name ?></h4> 
-							<h4>EN name<?php echo $item->en_name ?></h4> 
-							<h4>УКР назва<?php echo $item->ukr_name ?></h4> 
-							<h4>IDшник<?php echo $item->id ?></h4> 
-							<h4>P Id<?php echo $item->pearent_id ?></h4> 							
+							РУ название : <?php echo $item->ru_name ?> </br>
+							EN name :<?php echo $item->en_name ?> </br>
+							УКР назва :<?php echo $item->ukr_name ?></br>
+							IDшник :<?php echo $item->id ?> </br>
+							descr :<?php 
+								$jsarvar = $item->description;
+								//var_dump($jsarvar);
+								// $bufjs = json_decode($jsarvar);
+								echo $jsarvar[1] ;
+
+							 ?>						
 						</div>
-					</li> 
-				<?php endforeach ?>				
-				</ul>				
+					</li>  -->
+				<?php endforeach ?>	
+
+							
+				</ul>
+				
 			</div>

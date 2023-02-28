@@ -1,12 +1,12 @@
 body{
 	/* background: #C6D1D6; */
 	/* background-color: #f8f8f8; */
-	background-image: url(../img/bgcnc.webp);
+	/* background-image: url(../img/bgcnc.webp); */
 	
 }
 
 div{
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	/* margin: 2px; */
 }
 
@@ -75,6 +75,11 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 	font-size: 14px;
 }
 
+.nav-link{
+color: white;
+
+}
+
 .bg-dark {
 	background-color: #0D56A6;
 }
@@ -100,10 +105,13 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 .main-menu-item{
 	margin-left: 5px;
 	margin-right: 5px;
-	height: 240px; 
+	height: 485px; 
 	width: 240px; 
-	background-color: aqua; 
+	background-color: #f8f8f8; 
 	border: 2px solid black;
+}
+.main-menu-item:hover{
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.5)
 }
 
 .footer{	

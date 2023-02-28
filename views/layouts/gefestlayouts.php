@@ -36,7 +36,18 @@ AppAsset::register($this);
 			<div class="title-header">
 				telephone : +6 (315) 9379992 / +6 (871) 4556312
 			</div>
-
+			
+			<div class="input-group mb-3">
+  				<input 
+					type="text" 
+					class="form-control" 
+					placeholder="SEARCH " 
+					aria-label="ПОЛЕ ПОИСКА" 
+					aria-describedby="basic-addon2">
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="button">ПОИСК</button>
+				</div>
+			</div>
 		
 			<div class="menu-styles">
 
@@ -69,15 +80,15 @@ AppAsset::register($this);
 		<!-- MAIN -->
 		<div class="main">
 			<div class="main-menu">
-				<!-- MENU
+				MENU
 				<li>Товары и услуги</li>
 				<li>О нас</li>
 				<li>Отзывы</li>
 				<li>Доставка и оплата</li>
-				<li>Договор оферты</li> -->
+				<li>Договор оферты</li>
 				<?php 
 				
-				echo HMWidget::widget();
+				// echo HMWidget::widget();
 				
 				?>	
 				
